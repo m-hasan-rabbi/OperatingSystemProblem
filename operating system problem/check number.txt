@@ -1,0 +1,8 @@
+echo "enter a number "
+read num
+ if [ $num -ge 0 ] && [ $num -le 10 ]
+then 
+ echo "it is a number"
+else
+  echo "it is not a number"
+fi

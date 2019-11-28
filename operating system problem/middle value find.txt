@@ -1,0 +1,12 @@
+
+echo "enter three value"
+read a b c
+if [[ $a -gt $b  &&  $a -lt $c ]] || [[ $a -gt $c  &&  $a -lt $b ]]
+  then
+     echo "$a"
+ elif [[ $b -gt $a  &&  $b -lt $c ]] || [[ $b -gt $c  &&  $b -lt $a ]]
+   then
+   echo "$b"
+ else
+     echo "$c"
+fi

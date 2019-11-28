@@ -1,0 +1,12 @@
+echo "enter a number"
+read a
+sum=0
+div=0
+while [ $a -gt 0 ]
+ do
+   div=$(( $a%10 ))
+sum=$(( $sum+$div ))
+a=$(( $a/10 ))
+done
+echo "$sum"
+   

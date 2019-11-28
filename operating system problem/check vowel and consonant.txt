@@ -1,0 +1,25 @@
+echo "enter a digit "
+read val
+case $val in
+[0-9] )
+echo "number"
+;;
+a )
+echo "vowel"
+;;
+e )
+echo "vowel"
+;;
+i )
+echo "vowel"
+;;
+o )
+echo "vowel"
+;;
+u )
+echo "vowel"
+;;
+* )
+echo "consonant"
+;;
+esac

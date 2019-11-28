@@ -1,0 +1,26 @@
+echo "enter two number : "
+read x y
+
+echo "1 for add "
+echo "2 for sub "
+echo "3 for mul "
+echo "4 for div "
+echo "5 for multi "
+read a
+case $a in
+1 )
+echo "$x+$y" | bc
+;;
+2 )
+echo "$x-$y" | bc
+;;
+3 )
+echo "$x*$y" | bc
+;;
+4 )
+echo "scale=2;$x/$y" | bc
+;;
+5 )
+echo "$x%$y" | bc
+;;
+esac

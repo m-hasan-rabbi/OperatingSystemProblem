@@ -1,0 +1,16 @@
+read a
+k=0
+for (( i=$a; i<100; i++ ))
+   do
+  if [ $(( $i%2 )) -eq 1 ]
+   then 
+     echo "$i"
+      (( k++ ))
+  fi
+ 
+if [ $k -eq 6 ]
+   then
+   break
+fi
+done
+  

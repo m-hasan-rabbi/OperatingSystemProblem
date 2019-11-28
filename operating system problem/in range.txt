@@ -1,0 +1,11 @@
+echo "enter a number"
+read num
+if [ $num -ge 0 ] && [ $num -le 100 ]
+  then 
+   echo "in o to 100"
+elif [ $num -gt 100 ] && [ $num -le 150 ]
+   then
+    echo "in 101 to 150"
+else
+  echo "not range"
+fi

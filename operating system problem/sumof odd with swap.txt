@@ -1,0 +1,29 @@
+read a b
+sum=0
+sum1=0
+ if [ $a -gt $b ]
+    then
+       temp=$a
+        a=$b
+        b=$temp
+    for (( i=$a; i<=$b; i++ ))
+      do
+     if [  $(( $i%2 )) -eq 1 ]
+        then
+        sum=$(( $sum+$i ))
+      fi
+   done
+else
+   for (( i=$a; i<=$b; i++ ))
+     do
+     if [  $(( $i%2 )) -eq 1 ]
+     then
+        sum=$(( $sum+$i ))
+      fi
+   done
+
+fi
+echo "$sum"
+
+     
+  

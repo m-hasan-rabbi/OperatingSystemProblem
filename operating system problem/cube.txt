@@ -1,0 +1,7 @@
+echo "enter number"
+for (( i=0; i<5; i++ ))
+do 
+read a
+  
+ echo " $a*$a*$a " | bc
+done
